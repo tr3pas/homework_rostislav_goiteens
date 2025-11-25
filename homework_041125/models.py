@@ -10,3 +10,4 @@ class Animals(Base):
     name: Mapped[str] = mapped_column(String(50),nullable=False)
     age: Mapped[int] = mapped_column(nullable=False)
     adoped: Mapped[bool] = mapped_column(default=False)
+    health_status: Mapped[str] = mapped_column(String(50),default=False)
